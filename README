@@ -1,0 +1,7 @@
+
+Installing moderncv
+$kpsewhich -var-value=TEXMFHOME
+Returns: /Users/username/Library/texmf
+$mkdir -pv /Users/username/Library/texmf/latex
+
+

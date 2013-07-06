@@ -1,0 +1,24 @@
+\ProvidesPackage{mycvconfig}
+% PACKAGES %
+\usepackage[utf8]{inputenc} % utf8 encoding
+\usepackage[spanish]{babel} % spanish default language
+
+%\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.8]{geometry}
+\recomputelengths  
+\usepackage[T1]{fontenc}
+\usepackage{palatino}
+\usepackage{lmodern} 
+\usepackage{graphicx}
+\usepackage{marvosym}
+
+\definecolor{see}{rgb}{0.6,0.6,0.6}% for web links
+\definecolor{seeopaque}{rgb}{0.4,0.4,0.4}% for web links
+
+\newcommand{\thefirstname}[1]{\color{see} \normalfont{#1}}
+
+\newcommand{\thelastname}[1]{\color{seeopaque} \normalfont{#1}}
+
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
