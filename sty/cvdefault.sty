@@ -1,0 +1,47 @@
+\ProvidesPackage{cvdefault}
+% PACKAGES %
+\usepackage[utf8]{inputenc} % utf8 encoding
+\usepackage[spanish]{babel} % spanish default language
+
+\usepackage{xspace}
+\moderncvtheme[blue]{classic}
+\usepackage{hyperref} 
+
+%\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.8]{geometry}
+\recomputelengths  
+\usepackage[T1]{fontenc}
+\usepackage{palatino}
+\usepackage{lmodern} 
+\usepackage{graphicx}
+\usepackage{marvosym}
+
+\definecolor{see}{rgb}{0.6,0.6,0.6}% for web links
+\definecolor{seeopaque}{rgb}{0.4,0.4,0.4}% for web links
+
+\newcommand{\thefirstname}[1]{\color{see} \normalfont{#1}}
+
+\newcommand{\thelastname}[1]{\color{seeopaque} \normalfont{#1}}
+
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={Arnaldo Gaspar CV},    % title
+    pdfauthor={Arnaldo Gaspar},     % author
+    pdfsubject={CV},   % subject of the document
+    pdfnewwindow=true,      % links in new window
+    colorlinks=false,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links (change box color with
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=cyan           % color of external links
+}
