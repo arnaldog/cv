@@ -1,6 +1,6 @@
 # Arnaldo Gaspar V C.V. Makefile
 
-SRC=main.tex
+SRC=cv.tex
 OUTDIR=gen
 SRCDIR=tex
 
